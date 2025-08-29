@@ -90,7 +90,7 @@
         <!-- Carousel Images -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('images/img1.jpg') }}" alt="Sale Banner 1">
+                <img src="{{ asset('images/img2.jpg') }}" alt="Sale Banner 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="fw-bold">Mega Shopping Sale</h1>
                     <p class="fs-5">Up to 50% OFF on top brands. Limited time only!</p>
@@ -98,7 +98,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/img2.jpg') }}" alt="Sale Banner 2">
+                <img src="{{ asset('images/img1.jpg') }}" alt="Sale Banner 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="fw-bold">New Arrivals are Here</h1>
                     <p class="fs-5">Trendy collections to upgrade your wardrobe today.</p>
