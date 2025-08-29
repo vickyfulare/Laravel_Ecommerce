@@ -32,7 +32,7 @@ class UserController extends Controller
     // $req->session()->flush();
 
     // Redirect to login or home page
-    return redirect('/login');
+    return redirect('/');
 }
 
 //Register 
