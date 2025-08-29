@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-info shadow">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark shadow">
   <div class="container-fluid">
     <!-- Brand Logo / Name -->
     <a class="navbar-brand fw-bold text-white" href="/">Navbar</a>
