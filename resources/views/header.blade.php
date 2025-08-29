@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-dark shadow">
+<nav class="navbar navbar-expand-lg navbar-light bg-info shadow">
   <div class="container-fluid">
     <!-- Brand Logo / Name -->
     <a class="navbar-brand fw-bold text-white" href="/">Navbar</a>
@@ -17,7 +17,7 @@
     <!-- Toggler Button (for Mobile) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon white"></span>
     </button>
 
     <!-- Navbar Links -->

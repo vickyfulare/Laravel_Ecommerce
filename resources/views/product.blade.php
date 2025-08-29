@@ -1,6 +1,80 @@
 @extends('master')
 
 @section('content')
+<style>
+    /* 🔹 Make carousel images responsive */
+    .carousel-item img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+
+    /* 🔹 Carousel captions */
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* 📱 Small devices (up to 576px) */
+    @media (max-width: 576px) {
+        .carousel-item img {
+            height: 200px; /* Reduce height for small screens */
+        }
+        .carousel-caption h1 {
+            font-size: 15px;
+        }
+        .carousel-caption p {
+            font-size: 10px;
+        }
+        .carousel-caption a {
+            font-size: 10px;
+            padding: 6px 12px;
+        }
+    }
+
+    /* 📲 Tablets (576px - 768px) */
+    @media (min-width: 576px) and (max-width: 768px) {
+        .carousel-item img {
+            height: 300px;
+        }
+        .carousel-caption h1 {
+            font-size: 17px;
+        }
+        .carousel-caption p {
+            font-size: 12px;
+        }
+        .carousel-caption a {
+            font-size: 12px;
+            padding: 8px 14px;
+        }
+    }
+
+    /* 💻 Laptops (768px - 1200px) */
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .carousel-item img {
+            height: 450px;
+        }
+        .carousel-caption h1 {
+            font-size: 28px;
+        }
+        .carousel-caption p {
+            font-size: 16px;
+        }
+        .carousel-caption a {
+            font-size: 16px;
+            padding: 10px 18px;
+        }
+    }
+
+    /* 🖥️ Large screens (1200px and above) */
+    @media (min-width: 1200px) {
+        .carousel-item img {
+            height: 550px;
+        }
+    }
+</style>
+
 <div class="custom-product">
 
     <!-- Full-Width Carousel -->
@@ -16,7 +90,7 @@
         <!-- Carousel Images -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('images/img1.jpg') }}" class="d-block w-100" style="height:550px; object-fit:cover;" alt="Sale Banner 1">
+                <img src="{{ asset('images/img1.jpg') }}" alt="Sale Banner 1">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="fw-bold">Mega Shopping Sale</h1>
                     <p class="fs-5">Up to 50% OFF on top brands. Limited time only!</p>
@@ -24,7 +98,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/img2.jpg') }}" class="d-block w-100" style="height:550px; object-fit:cover;" alt="Sale Banner 2">
+                <img src="{{ asset('images/img2.jpg') }}" alt="Sale Banner 2">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="fw-bold">New Arrivals are Here</h1>
                     <p class="fs-5">Trendy collections to upgrade your wardrobe today.</p>
@@ -32,7 +106,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/img3.jpg') }}" class="d-block w-100" style="height:550px; object-fit:cover;" alt="Sale Banner 3">
+                <img src="{{ asset('images/img3.jpg') }}" alt="Sale Banner 3">
                 <div class="carousel-caption d-none d-md-block">
                     <h1 class="fw-bold">Big Festive Discounts</h1>
                     <p class="fs-5">Grab the hottest deals before they’re gone!</p>
